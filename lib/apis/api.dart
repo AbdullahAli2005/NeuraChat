@@ -9,28 +9,7 @@ import 'package:translator_plus/translator_plus.dart';
 import '../helper/global.dart';
 
 class APIS {
-  // static Future<void> getAnswers(String question) async {
-  //   final response = await post(
-  //     Uri.parse('https://api.openai.com/v1/chat/completions'),
-  //     headers: {
-  //       HttpHeaders.contentTypeHeader: 'application/json',
-  //       HttpHeaders.authorizationHeader: 'Bearer $apiKey'
-  //     },
-  //     body: jsonEncode({
-  //       "model": "gpt-3.5-turbo",
-  //       "max_tokens": 3000,
-  //       "temperature": 0,
-  //       "messages": [
-  //         {"role": "user", "content": question},
-  //       ],
-  //     }),
-
-  //     // final data = jsonDecode(res.body);
-  //   );
-  //   log('res: ${response.body}');
-  // }
-
-  //get answer from google gemini ai
+  // Get answer from google gemini ai
   static Future<String> getAnswer(String question) async {
     try {
       log('api key: $apiKey');
